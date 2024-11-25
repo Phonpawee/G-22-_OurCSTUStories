@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+body {
+    font-family: "Anuphan", sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #242323;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #ece0e0;
+    margin: 0;
+    font-family: "Mitr", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    max-width: 1000px;
+    max-height: auto;
+    margin: 0 auto;
+    border: 2px solid #151515;
+    background-color: #fffcfe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+img {
+    flex-shrink: 0;
+    width: 350px;
+    height: auto;
+    border: 2px solid #151515;
+    border-radius: 8px;
+    box-shadow:0 5px 7px #151515;
+}
+
+.content h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #151515;
+    line-height: 1.5;
+}
