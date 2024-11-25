@@ -1,0 +1,77 @@
+body {
+    font-family: "Itim", serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #FFF5E4;
+}
+
+header {
+    margin: 30px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    padding: 10px;
+    font-size: 40px;
+    color: #584B42;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1000px;
+    max-height: auto;
+    margin: 0 auto;
+    border: 2px solid #FFB9B9;
+    background-color: #FFD1D1;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Profile {
+    flex-shrink: 0;
+    width: 350px;
+    height: auto;
+    border: 2px solid #FFB9B9;
+    border-radius: 8px;
+    margin: 22px;
+    margin-top: 95px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    border: 2px solid #FFB9B9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fae6df;
+    margin: 20px;
+    width: 500px;
+}
+
+.content p {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #584B42;
+    line-height: 1;
+}
+
+.IG {
+    font-size: 22px;
+    font-family: "Itim", serif;
+    color: #584B42;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+}
+
+.IGpic {
+    width: 15px;
+}
+
+footer {
+    margin: 40px;
+}
