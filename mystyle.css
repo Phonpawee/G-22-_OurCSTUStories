@@ -1,0 +1,34 @@
+
+.container {
+    display: flex;
+    align-items: left;
+    background-color: #ffffff;
+    border-radius: 15px; /* ขอบมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงา */
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap; /* ให้ย่อหน้าจอแล้วองค์ประกอบซ้อนกัน */
+    max-width: 800px;
+    width: 100%;
+}
+img {
+    margin-right: 10px; /* ระยะห่างระหว่างรูปภาพและข้อความ */
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffcce6, #ffe6f7); /* ไล่สีพื้นหลัง */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    padding: 20px 0;
+}
+.container img {
+    border-radius: 10px; /* ขอบรูปมน */
+    max-width: 200px;
+    margin-right: 20px; /* เว้นช่องว่างระหว่างรูปกับข้อความ */
+}
+
+
+
