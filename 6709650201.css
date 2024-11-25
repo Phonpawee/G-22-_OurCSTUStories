@@ -41,6 +41,7 @@ img {
     height: auto;
     border: 2px solid #151515;
     border-radius: 8px;
+    box-shadow:0 5px 7px #151515;
 }
 
 .content h2 {
