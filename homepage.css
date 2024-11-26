@@ -1,12 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Chewy&family=Itim&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Chewy&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: 
+    #E8D8C4;
+    margin: 0;
+}
+
+header {
+    background-color:
+    #6D2932;
+    padding: 3px;
+    
+}
+.H {
+    color: #E8D8C4;
+    font-family: "Chewy", system-ui;
+    font-size: 60px;
+}
 .nav-container {
     display: flex;
     flex-direction: row;
     padding: 1px;
-    background-color:gray;
+    background-color:#561C24;
     justify-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.nav-container nav a{
+    color: aliceblue;
+    font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.nav-container nav a:hover{
+    color: gray;
+}
+
+
+
 .item1{
    font-size: 20px;
     padding: 10px;
@@ -36,8 +70,65 @@ a{
 img{
     justify-content: space-around;
     justify-content: center;
-    padding: 25px;
+    padding: 0px;
+    width: 200px;
+    height: 250px;
+    transition: tranform 3s ease ;
+    border: #C7B7A3 solid 7px;
+    border-radius: 15px;
+
 }
-.content {
+.content1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 20px;
+  
+}
+
+.name {
     text-align: center;
+    font-family: "Itim", cursive;
+  font-weight: 500px;
+  font-style: normal;
+  font-size: 25px;
 }
+
+.box1 {
+    margin: 50px;
+}
+.content2 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+}
+
+#charit:hover{
+    transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
+  }
+
+#arm:hover {
+    transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
+  }
+
+  #paeng:hover {
+    transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
+  }
+  
+  #program:hover {
+    transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
+  }
+
+  #aon:hover {
+    transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
+  }
+  
+  #pleng:hover {
+    transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
+  }
+  footer{
+    background-color: #561C24;
+    padding: 20px;
+  }
