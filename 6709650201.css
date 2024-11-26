@@ -35,7 +35,7 @@ header h1 {
 
 }
 
-img {
+#photo {
     flex-shrink: 0;
     width: 350px;
     height: auto;
@@ -50,3 +50,4 @@ img {
     color: #151515;
     line-height: 1.5;
 }
+
