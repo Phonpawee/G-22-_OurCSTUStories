@@ -50,4 +50,15 @@ header h1 {
     color: #151515;
     line-height: 1.5;
 }
-
+.back{
+    color:  #f9f7f7;
+    text-decoration: none;
+    float: left;
+    position:top;
+    margin-left: 50px;
+    font-size: 20px;
+    overflow:visible;
+    margin-top: 40px;
+    font-family: "Mitr", sans-serif;
+    margin-bottom: -60px;
+}

@@ -87,3 +87,14 @@ footer {
 
 }
 
+.back{
+    color:  #000000;
+    text-decoration: none;
+    float: left;
+    position:top;
+    margin-left: 50px;
+    font-size: 20px;
+    overflow:visible;
+    margin-top: 30px;
+}
+

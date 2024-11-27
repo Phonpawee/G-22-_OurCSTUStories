@@ -30,5 +30,17 @@ body {
     margin-right: 20px; /* เว้นช่องว่างระหว่างรูปกับข้อความ */
 }
 
+.back{
+    color:  #f07fce;
+    text-decoration: none;
+    float: left;
+    position:top;
+    margin-left: -1450px;
+    font-size: 20px;
+    overflow:visible;
+    margin-top: -30px;
+    font-family: 'Arial', sans-serif;
+}
+
 
 

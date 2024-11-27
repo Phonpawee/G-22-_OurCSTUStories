@@ -47,3 +47,14 @@ footer{
     color: #fcf9f0;
     margin: 0;
 }
+
+.back{
+    color:  #fcf9f0;
+    text-decoration: none;
+    float: left;
+    margin-left: 50px;
+    font-size: 20px;
+    overflow:visible;
+    margin-top: -80px;
+    font-family: "Tourney", sans-serif;
+}
