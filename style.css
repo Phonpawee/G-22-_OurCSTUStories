@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Chewy&family=Itim&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Chewy&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Chewy", system-ui;
+    background-color:  #E8D8C4;
+  }
+  
+
+  .form-container {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #0d0e0c;
+    border-radius: 5px;
+    background-color: #6D2932;;
+    box-shadow: 0 8px 10px 3px #696a67;
+  }
+  
+ 
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color:  #E8D8C4;
+  }
+  
+
+  .form-group {
+    margin-bottom: 20px;
+    color:  #fcfbf8;
+    font-family: "Itim", cursive;
+    font-size: 20px;
+  }
+  
+  /* Styling for form group labels */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Styling for various form input types */
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group select,
+  .form-group textarea,
+  .form-group input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Allow vertical resizing for textareas */
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  /* Styling for select dropdowns */
+  .form-group select {
+    width: 100%;
+  }
+  
+  /* Styling for the submit button */
+  .form-group input[type="submit"] {
+    background-color: #d83c3c;
+    color: rgb(250, 250, 250);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Chewy", system-ui;
+  }
+  
+  /* Styling for small helper text */
+  .form-group small {
+    font-size: 12px;
+    color: hsl(0, 10%, 86%);
+  }
+  
+  /* New styles for error messages */
+  
+  /* Position the error message relatively within the form group */
+  .form-group {
+    position: relative;
+  }
+  
+  /* Styling for error messages */
+  .error {
+    color: red;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  
