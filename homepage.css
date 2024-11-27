@@ -36,7 +36,7 @@ header {
 }
 
 .nav-container nav a:hover{
-    color: gray;
+    color: rgb(31, 30, 30);
 }
 
 
@@ -76,7 +76,6 @@ img{
     transition: tranform 3s ease ;
     border: #C7B7A3 solid 7px;
     border-radius: 15px;
-
 }
 .content1 {
     justify-content: center;
@@ -132,3 +131,26 @@ img{
     background-color: #6D2932;
     padding: 20px;
   }
+  footer .top_comment{
+    font-size: 30px;
+    color: aliceblue;
+    font-family: "Itim", cursive;
+
+  }
+
+  footer a .comment {
+    font-size: 25px;
+    color: aliceblue;
+    font-family: "Itim", cursive;
+    transition: color 0.3s;
+    transition: text-decoration ;
+    margin-top: -20px;
+    text-decoration: underline solid rgb(254, 254, 254) 2px;
+   
+  }
+
+  footer a .comment:hover{
+    color: rgb(54, 92, 190);
+    text-decoration: none;    
+  }
+  
