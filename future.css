@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Chewy&family=Itim&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Chewy&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color:
+        #E8D8C4;
+    margin: 0;
+}
+
+header {
+    background-color:
+        #6D2932;
+    padding: 3px;
+
+}
+
+.H {
+    color: #E8D8C4;
+    font-family: "Chewy", system-ui;
+    font-size: 60px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+    background-color: #561C24;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-container nav a {
+    color: aliceblue;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.nav-container nav a:hover {
+    color: gray;
+}
+
+
+
+.item1 {
+    font-size: 20px;
+    padding: 10px;
+    flex: 5%;
+    margin: 10px;
+    text-align: center;
+}
+
+.item2 {
+    font-size: 20px;
+    padding: 10px;
+    flex: 5%;
+    margin: 10px;
+    text-align: center;
+}
+
+.item3 {
+    font-size: 20px;
+    padding: 10px;
+    flex: 5%;
+    margin: 10px;
+    text-align: center;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.box1 {
+    background-color: #561C24;
+    width: 420px;
+    height: 750px;
+    margin-left: 65px;
+    margin-right: 65px;
+    box-shadow: 7px 7px gray;
+}
+
+img {
+    width: 330px;
+    height: 380px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #E8D8C4;;
+    border-width: 8px;
+    margin: 15px;
+    margin-top: 25px;
+}
+
+p {
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.name {
+    font-size: 26px;
+    color: #E8D8C4;
+    margin: 5px;
+}
+
+footer{
+    background-color: #6D2932;
+    padding: 20px;
+  }
