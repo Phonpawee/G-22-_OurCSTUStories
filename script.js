@@ -175,3 +175,76 @@ document
   .getElementById("studentID")
   .addEventListener("input", validateStudentID);
 document.getElementById("email").addEventListener("input", validateEmail);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('guestbook-form');
+    const entriesList = document.getElementById('entries-list');
+  
+    function validateForm(event) {
+      const name = document.getElementById('name').value.trim();
+      const message = document.getElementById('message').value.trim();
+  
+      if (name === "" || message === "") {
+        event.preventDefault(); 
+        alert("Please fill in all required fields.");
+        return false;
+      }
+      return true;
+    }
+  
+    function addEntry(event) {
+      event.preventDefault(); 
+  
+      if (!validateForm(event)) return;
+  
+      const name = document.getElementById('name').value;
+      const topic = document.getElementById('topic').value;
+      const message = document.getElementById('message').value;
+  
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `
+        <strong>Name:</strong> ${name} <br>
+        <strong>Topic:</strong> ${topic} <br>
+        <strong>Message:</strong> ${message}
+      `;
+      entriesList.appendChild(listItem);
+  
+      form.reset();
+    }
+  
+    form.addEventListener('submit', addEntry);
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('myForm');
+    const entriesList = document.getElementById('comments-list');
+  
+    function validateForm(event) {
+      const name = document.getElementById('fullname').value.trim();
+      const message = document.getElementById('message').value.trim();
+  
+  
+      return true;
+    }
+  
+    function addEntry(event) {
+      event.preventDefault(); 
+  
+      if (!validateForm(event)) return;
+  
+      const fullname = document.getElementById('fullname').value;
+      
+      const description = document.getElementById('description').value;
+  
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `
+        <strong>Name:</strong> ${fullname} <br>
+        <strong>Message:</strong> ${description}
+      `;
+      entriesList.appendChild(listItem);
+  
+      form.reset();
+    }
+  
+    form.addEventListener('submit', addEntry);
+  });

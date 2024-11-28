@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="try.css">
+</head>
+<body>
+    <section class="form-group">
+        <h1>What do you think about our page?</h1>
+        
+        <form id="guestbook-form">
+          
+          <div class="group">
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          
+          <div class="group">
+              <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+              <span id="emailError" class="error"></span>        
+            </div>
+
+          <div class="group">
+            <select id="Faculty" name="Faculty">
+                <option value="" disabled selected>Faculty</option>
+                    <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
+                    <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี</option>
+                    <option value="คณะรัฐศาสตร์">คณะรัฐศาสตร์</option>
+                    <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                    <option value="คณะสังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์</option>
+                    <option value="คณะสังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                    <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                    <option value="คณะวารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                    <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                    <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
+                    <option value="คณะสถาปัตยกรรมศาสตร์และการผังเมือง">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                    <option value="คณะศิลปกรรมศาสตร์">คณะศิลปกรรมศาสตร์</option>
+                    <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
+                    <option value="คณะสหเวชศาสตร์">คณะสหเวชศาสตร์</option>
+                    <option value="คณะทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
+                    <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+                    <option value="คณะสาธารณสุขศาสตร์">คณะสาธารณสุขศาสตร์</option>
+                    <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์</option>
+                    <option value="คณะวิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                    <option value="วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์</option>
+                    <option value="วิทยาลัยนวัตกรรม">วิทยาลัยนวัตกรรม</option>
+                    <option value="วิทยาลัยสหวิทยาการ">วิทยาลัยสหวิทยาการ</option>
+                    <option value="วิทยาลัยโลกคดีศึกษา">วิทยาลัยโลกคดีศึกษา</option>
+                    <option value="สถาบันเทคโนโลยีนานาชาติสิรินธร">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+                    <option value="วิทยาลัยนานาชาติ ปรีดี พนมยงค์">วิทยาลัยนานาชาติ ปรีดี พนมยงค์</option>
+                    <option value="วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+              </select>
+          </div>
+          
+          <div class="group">
+         
+        <select id="academicYear" name="academicYear">
+          <option value="" disabled selected>Academic Year</option>
+          <option value="2561">2561</option>
+          <option value="2562">2562</option>
+          <option value="2563">2563</option>
+          <option value="2564">2564</option>
+          <option value="2565">2565</option>
+          <option value="2566">2566</option>
+          <option value="2567">2567</option>
+        </select>
+        </div>
+        <div class="group">
+            <label for="sDate">Date :</label>
+            <input type="datetime-local" id="Date" name="Date" />
+        </div>      
+    
+    <div class="group">
+              <label for="message">Your Comments :</label>
+              <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+          </div>
+    <div class="group">    
+          <button type="submit">Submit</button>
+    </div>
+        </form>
+      </section>
+    
+      <section class="guestbook-entries">
+        <h3>COMMENTS</h3>
+        <ul id="comments-list"></ul>
+      </section>
+    
+      <script src="try.js"></script>
+</body>
+</html>

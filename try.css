@@ -5,8 +5,7 @@ body {
     background-color:  #E8D8C4;
   }
   
-
-  .form-container {
+  .form-group {
     max-width: 70%;
     margin: 20px auto;
     padding: 20px;
@@ -15,55 +14,43 @@ body {
     background-color: #6D2932;;
     box-shadow: 0 8px 10px 3px #696a67;
   }
-  
- 
-  .form-container h1 {
+
+  .form-group h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 60px;
     color:  #E8D8C4;
   }
   
-
-  .form-group {
+  .group {
     margin-bottom: 20px;
     color:  #fcfbf8;
     font-family: "Itim", cursive;
     font-size: 20px;
   }
-  
-  /* Styling for form group labels */
-  .form-group label {
+
+  .group label {
     display: block;
     font-weight: bold;
   }
-  
-  /* Styling for various form input types */
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group select,
-  .form-group textarea,
-  .form-group input[type="datetime-local"] {
+
+  .group input[type="text"],
+  .group input[type="email"],
+  .group select,
+  .group textarea,
+  .group input[type="datetime-local"] {
     width: 100%;
     padding: 8px;
     background-color: #fefefe;
     border: 5px solid #b37a7a;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: "Itim", cursive;
+    text-align: center;
+    font-size: 20px;
   }
-  
-  /* Allow vertical resizing for textareas */
-  .form-group textarea {
-    resize: vertical;
-  }
-  
-  /* Styling for select dropdowns */
-  .form-group select {
-    width: 100%;
-  }
-  
-  /* Styling for the submit button */
-  .form-group input[type="submit"] {
+
+  .group [type="submit"] {
     background-color: #d83c3c;
     color: rgb(250, 250, 250);
     padding: 10px 15px;
@@ -72,25 +59,3 @@ body {
     cursor: pointer;
     font-family: "Chewy", system-ui;
   }
-  
-  /* Styling for small helper text */
-  .form-group small {
-    font-size: 12px;
-    color: hsl(0, 10%, 86%);
-  }
-  
-  /* New styles for error messages */
-  
-  /* Position the error message relatively within the form group */
-  .form-group {
-    position: relative;
-  }
-  
-  /* Styling for error messages */
-  .error {
-    color: red;
-    display: block;
-    margin-top: 5px;
-  }
-  
-  
