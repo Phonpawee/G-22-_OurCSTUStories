@@ -104,24 +104,48 @@ img{
     margin-top: -50px;
 }
 
+#charit {
+  transition: transform 0.2s;
+}
+
 #charit:hover{
     transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
+  }
+
+#arm {
+    transition: transform 0.2s;
   }
 
 #arm:hover {
     transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
   }
+  
+#paeng {
+    transition: transform 0.2s;
+  }
 
-  #paeng:hover {
+#paeng:hover {
     transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
   }
   
-  #program:hover {
+#program {
+    transition: transform 0.2s;
+  }
+
+#program:hover {
     transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
+  }
+
+#aon {
+    transition: transform 0.2s;
   }
 
   #aon:hover {
     transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
+  }
+  
+  #pleng {
+    transition: transform 0.2s;
   }
   
   #pleng:hover {
