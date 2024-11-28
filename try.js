@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('guestbook-form');
+    const form = document.getElementById('guestbook');
     const entriesList = document.getElementById('comments-list');
     
     function validateForm(event) {
@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
       const Date = document.getElementById('Date').value;
       const listItem = document.createElement('li');
       listItem.innerHTML = `
-        Name : ${name} <br>
-        Faculty : ${Faculty} <br>
-        Message : ${message} <br>
-        Date : ${Date} <br>
+        <b>Name :</b> ${name} <br>
+        <b>Faculty :</b> ${Faculty} <br>
+        <b>Comment :</b> ${message} <br>
+        <b>Date :</b> ${Date} <br>
       `;
       entriesList.appendChild(listItem);
     

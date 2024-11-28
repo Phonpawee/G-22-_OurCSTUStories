@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guestbook</title>
     <link rel="stylesheet" href="try.css">
 </head>
 <body>
     <section class="form-group">
         <h1>What do you think about our page?</h1>
         
-        <form id="guestbook-form">
+        <form id="guestbook">
           
           <div class="group">
-              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="name">Name :</label>  
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
           </div>
           
           <div class="group">
-              <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+            <label for="email">Email :</label>  
+            <input type="email" id="email" name="email" placeholder="Enter your email" required/>
               <span id="emailError" class="error"></span>        
             </div>
 
           <div class="group">
+            <label for="Faculty">Faculty :</label>
             <select id="Faculty" name="Faculty">
                 <option value="" disabled selected>Faculty</option>
                     <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
@@ -54,7 +57,7 @@
           </div>
           
           <div class="group">
-         
+       <label for="academicYear">Academic Year :</label>
         <select id="academicYear" name="academicYear">
           <option value="" disabled selected>Academic Year</option>
           <option value="2561">2561</option>
@@ -81,9 +84,9 @@
         </form>
       </section>
     
-      <section class="guestbook-entries">
+      <section class="Comments">
         <h3>COMMENTS</h3>
-        <ul id="comments-list"></ul>
+        <ul style="list-style: none;" id="comments-list"></ul>
       </section>
     
       <script src="try.js"></script>
