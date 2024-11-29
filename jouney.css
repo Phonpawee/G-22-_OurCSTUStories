@@ -127,7 +127,7 @@ a{
 
   }
 
-  @media screen and (max-width: 640px){
+  @media screen and (max-width: 768px){
 
     body{
         background-color: 
@@ -182,23 +182,23 @@ a{
 .H {
   color: #E8D8C4;
   font-family: "Chewy", system-ui;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .item1{
-  font-size: 20px;
+  font-size: 10px;
    padding: 10px;
    margin: 1px;
    text-align: center;
 }
 .item2{
-  font-size: 20px;
+  font-size: 10px;
    padding: 10px;
    margin: 1px;
    text-align: center;
 }
 .item3{
-   font-size: 20px;
+   font-size: 10px;
    padding: 10px;
    margin: 1px;
    text-align: center;
