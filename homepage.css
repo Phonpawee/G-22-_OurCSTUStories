@@ -178,3 +178,134 @@ img{
     text-decoration: none;    
   }
   
+  @media screen and (max-width: 500px){
+
+    body{
+        background-color: 
+        #E8D8C4;
+        margin: 0;
+        
+    }
+
+    .nav-container {
+      display: flex;
+      flex-direction: row;
+      padding: 1px;
+      background-color:#561C24;
+      justify-content: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+  }
+
+  .H {
+    color: #E8D8C4;
+    font-family: "Chewy", system-ui;
+    font-size: 40px;
+  }
+  
+  .item1{
+    font-size: 10px;
+     padding: 10px;
+     margin: 1px;
+     text-align: center;
+  }
+  .item2{
+    font-size: 10px;
+     padding: 10px;
+     margin: 1px;
+     text-align: center;
+  }
+  .item3{
+     font-size: 10px;
+     padding: 10px;
+     margin: 1px;
+     text-align: center;
+    
+  }
+
+  .content1 {
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    overflow: hidden;
+    margin: 20px;
+  
+}
+
+.content2 {
+  justify-content: center;
+  display: flex;
+  flex-direction:column;
+  margin-top: -50px;
+}
+
+}
+
+@media screen and (min-width: 768px){
+
+  body{
+      background-color: 
+      #E8D8C4;
+      margin: 0;
+      
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+    background-color:#561C24;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.H {
+  color: #E8D8C4;
+  font-family: "Chewy", system-ui;
+  font-size: 40px;
+}
+
+.item1{
+  font-size: 10px;
+   padding: 10px;
+   margin: 1px;
+   text-align: center;
+}
+.item2{
+  font-size: 10px;
+   padding: 10px;
+   margin: 1px;
+   text-align: center;
+}
+.item3{
+   font-size: 10px;
+   padding: 10px;
+   margin: 1px;
+   text-align: center;
+  
+}
+
+.content1 {
+  justify-content: center;
+  display: flex;
+  flex-direction:row;
+  overflow: hidden;
+  margin: 10px;
+
+}
+
+.content2 {
+justify-content: center;
+display: flex;
+flex-direction:row;
+margin-top: -40px;
+}
+
+.box1 {
+  margin: 30px;
+}
+
+}
