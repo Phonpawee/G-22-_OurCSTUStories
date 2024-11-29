@@ -1,3 +1,6 @@
+
+
+
 *{
     box-sizing: border-box;
 
@@ -13,7 +16,7 @@ header {
 }
 
 body {
-    background: linear-gradient(to bottom, #FFFFFF, #F8F8FF);
+    background: linear-gradient(to bottom,rgb(237, 235, 235), #FFFFFF, #F8F8FF);
     font-family: "Noto Sans Thai", sans-serif;
     font-size: 16px;
     min-height: 100vh;
@@ -46,6 +49,14 @@ footer {
 }
 
 
+
+/* คำสั่งต่างๆ */
+
+  
+
+
+
+/* ส่วนของคำสั่ง class  */
 .container {
     display: flex;
     flex-direction: column;
@@ -66,17 +77,10 @@ footer {
     
 }
 
-/* .mypic {
-    border-radius: 7px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    padding: 7px;
-
-
-} */
 
 .borinfo {
-    border: 2px;
-    border-radius: 10px;
+    border: 5px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     padding: 25px;
 
@@ -97,37 +101,44 @@ footer {
 
 }
 
+
+
+/* ปุ่ม BACK */
 .back{
     display: flex;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
     float: left;
+
+    font-weight: 600;
+    font-size: 20px;
+
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
     margin: 5px;
+    padding: 3px;
+
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    
+
+    text-decoration: none;
+    color: black;
 }
 
-.textback {
-    border: 0px;
-
+.back:hover {
+    background-color: #eec404; /* สีเมื่อ hover */
+    box-shadow: 0.15em 0.15em;
+    transform: translate(-0.05em, -0.05em);
 }
 
-.back img:hover {
-    background-color: #53d886; /* สีเมื่อ hover */
-    transform: scale(1.1); /* ขยายปุ่มเล็กน้อย */
-    border-radius: 35px;
-    
-}
-
-.back img:active {
-    transform: scale(0.93); /* ย่อปุ่มเล็กน้อยเมื่อคลิก */
+.back:active {
+    transform: translate(0.05em, 0.05em); 
+    box-shadow: 0.05em 0.05em;
 }
 
 
-
-
+/* Respond หน้า Device. */
 @media only screen and (max-width: 480px) {
 
 

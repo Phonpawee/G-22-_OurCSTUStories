@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
 body {
     font-family: "Anuphan", sans-serif;
     margin: 20px;
@@ -50,18 +52,51 @@ header h1 {
     color: #151515;
     line-height: 1.5;
 }
+
+
+
+/* ปุ่ม BACK */
 .back{
+    font-family: "Mitr", sans-serif;
+    font-size: 20px;
     color:  #f9e5e5;
     text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     float: left;
-    position:top;
-    margin-left: 50px;
-    font-size: 20px;
-    overflow:visible;
+    position: top;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    margin: 5px;
     margin-top: 40px;
-    font-family: "Mitr", sans-serif;
+    margin-left: 50px;
     margin-bottom: -60px;
+    padding: 3px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
 }
+
+.back:hover {
+    background-color: #eec404; /* สีเมื่อ hover */
+    box-shadow: 0.15em 0.15em;
+    transform: translate(-0.05em, -0.05em);
+}
+
+.back:active {
+    transform: translate(0.05em, 0.05em); 
+    box-shadow: 0.05em 0.05em;
+}
+
+
 
 @media screen and (max-width: 768px) {
     .content h2 {

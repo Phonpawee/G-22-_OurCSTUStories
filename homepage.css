@@ -1,34 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Chewy&family=Itim&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Chewy&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
-    background-color: 
-    #E8D8C4;
-    margin: 0;
+  background-color: 
+  #E8D8C4;
+  margin: 0;
 }
 
 header {
-    background-color:
-    #6D2932;
-    padding: 3px;
+  background-color:
+  #6D2932;
+  padding: 3px;
     
 }
+
 .H {
-    color: #E8D8C4;
-    font-family: "Chewy", system-ui;
-    font-size: 60px;
+  color: #E8D8C4;
+  font-family: "Chewy", system-ui;
+  font-size: 60px;
 }
 .nav-container {
-    display: flex;
-    flex-direction: row;
-    padding: 1px;
-    background-color:#561C24;
-    justify-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  padding: 1px;
+  background-color:#561C24;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .nav-container nav a{
-    color: aliceblue;
-    font-family: "Itim", cursive;
+  color: aliceblue;
+  font-family: "Itim", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
@@ -36,24 +39,25 @@ header {
 }
 
 .nav-container nav a:hover{
-    color: rgb(31, 30, 30);
+  color: rgb(31, 30, 30);
+
 }
 
 
 
 .item1{
-   font-size: 20px;
-    padding: 10px;
-    flex: 5%;
-    margin: 10px;
-    text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  flex: 5%;
+  margin: 10px;
+  text-align: center;
 }
 .item2{
-   font-size: 20px;
-    padding: 10px;
-    flex: 5%;
-    margin: 10px;
-    text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  flex: 5%;
+  margin: 10px;
+  text-align: center;
 }
 .item3{
     font-size: 20px;
@@ -76,7 +80,9 @@ img{
     transition: tranform 3s ease ;
     border: #C7B7A3 solid 7px;
     border-radius: 15px;
+
 }
+
 .content1 {
     justify-content: center;
     display: flex;
@@ -151,10 +157,14 @@ img{
   #pleng:hover {
     transform: scale(1.2); /* ขยายรูปภาพ 1.2 เท่า */
   }
+
+
   footer{
     background-color: #6D2932;
     padding: 20px;
+
   }
+
   footer .top_comment{
     font-size: 30px;
     color: aliceblue;
@@ -175,7 +185,8 @@ img{
 
   footer a .comment:hover{
     color: rgb(54, 92, 190);
-    text-decoration: none;    
+    text-decoration: none;   
+
   }
   
   @media screen and (max-width: 500px){
