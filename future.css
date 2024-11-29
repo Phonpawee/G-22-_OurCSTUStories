@@ -7,11 +7,104 @@ body {
     margin: 0;
 }
 
+@media screen and (max-width: 500px) {
+    body {
+        background-color:
+            #E8D8C4;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        span {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+            margin-left: 0;
+
+        }
+
+        .box1 {
+            background-color: #561C24;
+            width: 100%;
+            height: 750px;
+            box-shadow: 7px 7px gray;
+            padding-bottom: 0px;
+            justify-content: center;
+            margin: 0px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding: 0;
+        }
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        padding: 1px;
+        background-color: #561C24;
+        justify-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .item1 {
+        font-size: 10px;
+        padding: 1px;
+        margin: 1px;
+        text-align: center;
+    }
+
+    .item2 {
+        font-size: 10px;
+        padding: 1px;
+        margin: 1px;
+        text-align: center;
+    }
+
+    .item3 {
+        font-size: 10px;
+        padding: 1px;
+        margin: 1px;
+        text-align: center;
+    }
+
+    .H {
+        color: #E8D8C4;
+        font-family: "Chewy", system-ui;
+        font-size: 40px;
+    }
+
+    img {
+        width: 250px;
+        height: 320px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #E8D8C4;
+        border-width: 8px;
+        margin: 15px;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    p {
+        font-family: "Itim", cursive;
+        font-size: 18px;
+        color: white;
+    }
+}
+
+
 header {
     background-color:
         #6D2932;
     padding: 3px;
-
 }
 
 .H {
@@ -98,7 +191,7 @@ img {
     height: 380px;
     border-radius: 10px;
     border-style: solid;
-    border-color: #E8D8C4;;
+    border-color: #E8D8C4;
     border-width: 8px;
     margin: 15px;
     margin-top: 25px;
@@ -116,7 +209,7 @@ p {
     margin: 5px;
 }
 
-footer{
+footer {
     background-color: #6D2932;
     padding: 20px;
-  }
+}
