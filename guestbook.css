@@ -139,10 +139,20 @@ a {
     margin: 0 auto;
     padding-top: 1px;
     font-family: "Itim", cursive;
+    margin-bottom: 10px;
    
   }
 
   .Comments h3{
     font-family: "Itim", cursive;
    
+  }
+
+  @media screen and (max-width: 500px){
+    #comments-list {
+      font-size: 15px;
+      text-align: center;
+      margin-left: -15px;
+      padding-right: 10px;
+    }
   }

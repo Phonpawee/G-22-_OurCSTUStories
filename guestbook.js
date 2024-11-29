@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <b>Name :</b> ${name} <br>
         <b>Faculty :</b> ${Faculty} <br>
         <b>Comment :</b> ${message} <br>
-        <b>Date :</b> ${Date} <br>
+        <b>Date :</b> ${Date} <br> <br>
       `;
       entriesList.appendChild(listItem);
     
