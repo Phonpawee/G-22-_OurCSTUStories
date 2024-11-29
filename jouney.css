@@ -127,6 +127,9 @@ a{
         justify-content: center;
 
   }
+  p{
+    font-family: "Itim", cursive;
+  }
 
   @media screen and (max-width: 768px){
 
