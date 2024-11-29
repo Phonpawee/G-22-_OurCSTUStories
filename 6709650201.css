@@ -51,7 +51,7 @@ header h1 {
     line-height: 1.5;
 }
 .back{
-    color:  #f9f7f7;
+    color:  #f9e5e5;
     text-decoration: none;
     float: left;
     position:top;
@@ -61,4 +61,37 @@ header h1 {
     margin-top: 40px;
     font-family: "Mitr", sans-serif;
     margin-bottom: -60px;
+}
+
+@media screen and (max-width: 768px) {
+    .content h2 {
+        font-size: 14px;
+    }
+
+    .back{
+        color:  #f9e5e5;
+        text-decoration: none;
+        float: left;
+        margin-left: 40%;
+        font-size: 15px;
+        overflow:visible;
+        margin-top: 20px;
+        font-style: italic;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+             
+    }
+    #photo{
+        width: 100%;
+    height: auto;
+    }
+    .content{
+        margin-top: -50px;
+    }
 }
