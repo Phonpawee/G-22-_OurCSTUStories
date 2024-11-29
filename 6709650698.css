@@ -53,6 +53,61 @@ img {
     color: #151515;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #86bdd7;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #151515;
+    margin: 0;
+}
+
+.container {
+    font-style: italic;
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    max-width: 1000px;
+    max-height: auto;
+    margin: 0 auto;
+    border: 2px solid #151515;
+    background-color: #cee9f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    flex-shrink: 0;
+    width: 350px;
+    height: auto;
+    border: 2px solid #151515;
+    border-radius: 8px;
+}
+
+.content h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #151515;
+    line-height: 1.5;
+}
+
+.content h2 i {
+    font-style: italic;
+    color: #151515;
+}
+
 .back{
     color:  #000000;
     text-decoration: none;
@@ -68,6 +123,17 @@ img {
 @media screen and (max-width: 768px) {
     .content h2 {
         font-size: 14px;
+    }
+
+    .back{
+        color:  #000000;
+        text-decoration: none;
+        float: left;
+        margin-left: 40%;
+        font-size: 15px;
+        overflow:visible;
+        margin-top: -50px;
+        font-style: italic;
     }
 }
 
@@ -89,5 +155,16 @@ img {
 
     .contact-info {
         font-size: 12px;
+    }
+
+    .back{
+        color:  #000000;
+        text-decoration: none;
+        float: left;
+        margin-left: 50px;
+        font-size: 15px;
+        overflow:visible;
+        margin-top: 0px;
+        font-style: italic;
     }
 }
