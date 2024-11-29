@@ -36,9 +36,9 @@ section {
 footer {
     background-color: rgb(242, 240, 240);
     height: 100px;
-    margin-top: 37px;
-    padding: 10px;
-
+    width: 100hv;
+    margin-top: 38px;
+    padding: 15px;
 
 }
 
@@ -88,15 +88,35 @@ footer {
 }
 
 .back{
-    color:  #000000;
+    display: flex;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
     float: left;
-    position:top;
-    margin-left: 50px;
-    font-size: 20px;
-    overflow: visible;
-    margin-top: 30px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
 }
+
+.textback {
+    border: 0px;
+
+}
+
+.back img:hover {
+    background-color: #53d886; /* สีเมื่อ hover */
+    transform: scale(1.1); /* ขยายปุ่มเล็กน้อย */
+    border-radius: 35px;
+    
+}
+
+.back img:active {
+    transform: scale(0.93); /* ย่อปุ่มเล็กน้อยเมื่อคลิก */
+}
+
+
+
 
 @media only screen and (max-width: 480px) {
 
