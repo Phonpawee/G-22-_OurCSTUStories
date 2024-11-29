@@ -2,15 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Bungee+Tint&family=Chewy&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color:
-        #E8D8C4;
+    background-color:#E8D8C4;
     margin: 0;
 }
 
 @media screen and (max-width: 500px) {
     body {
-        background-color:
-            #E8D8C4;
+        background-color:#E8D8C4;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -25,13 +23,13 @@ body {
             margin-top: 0px;
             margin-bottom: 0px;
             padding-bottom: 10px;
-            margin-left: 0;
+            margin-left: auto;
             
         }
 
         .box1 {
             background-color: #561C24;
-            width: 85%;
+            width: 90%;
             height: 750px;
             box-shadow: 7px 7px gray;
             padding-bottom: 0px;border-radius: 10px;
@@ -55,28 +53,28 @@ body {
         margin-bottom: 20px;
     }
 
-    .item1 {
+    .nav-container .item1 {
         font-size: 10px;
-        padding: 1px;
-        margin: 1px;
+        padding-top: 15px;
+        margin: 0px;
         text-align: center;
     }
 
-    .item2 {
+    .nav-container .item2 {
         font-size: 10px;
-        padding: 1px;
-        margin: 1px;
+        padding-top: 15px;
+        margin: 0px;
         text-align: center;
     }
 
-    .item3 {
+    .nav-container .item3 {
         font-size: 10px;
-        padding: 1px;
-        margin: 1px;
+        padding-top: 15px;
+        margin: 0px;
         text-align: center;
     }
 
-    header .H {
+    body header .H {
         color: #E8D8C4;
         font-family: "Chewy", system-ui;
         font-size: 40px;
