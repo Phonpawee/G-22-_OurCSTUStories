@@ -90,11 +90,11 @@ span {
     margin-left: 65px;
     margin-right: 65px;
     box-shadow: 7px 7px gray;
-    padding: 7px;
+    padding: 10px;
 }
 
 img {
-    width: 330px;
+    width: 320px;
     height: 380px;
     border-radius: 10px;
     border-style: solid;
