@@ -58,3 +58,34 @@ footer{
     margin-top: -80px;
     font-family: "Tourney", sans-serif;
 }
+
+@media screen and (max-width: 500px){
+    
+    .container {
+        font-family: "Noto Sans Thai", sans-serif;
+        font-style: normal;
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        max-width: 900px;
+        max-height: auto;
+        margin: 0 auto;
+        border-style: ridge;
+        background-color: #fcfee8;
+        padding: 20px;
+        border-radius: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .back{
+        color:  #fcf9f0;
+        text-decoration: none;
+        float: left;
+        margin-left: 50px;
+        font-size: 13px;
+        overflow:visible;
+        margin-top: -80px;
+        font-family: "Tourney", sans-serif;
+    }
+}
