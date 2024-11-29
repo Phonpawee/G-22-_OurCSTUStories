@@ -155,4 +155,52 @@ a {
       margin-left: -16px;
       padding-right: 10px;
     }
+
+    body header .H {
+        color: #E8D8C4;
+        font-family: "Chewy", system-ui;
+        font-size: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        padding: 1px;
+        background-color: #561C24;
+        justify-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nav-container .item1 {
+        font-size: 10px;
+        padding-top: 15px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .nav-container .item2 {
+        font-size: 10px;
+        padding-top: 15px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .nav-container .item3 {
+        font-size: 10px;
+        padding-top: 15px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .form-group h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color:  #E8D8C4;
+      }
   }
