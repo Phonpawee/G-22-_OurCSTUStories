@@ -111,43 +111,45 @@ img {
 
 
 /* ปุ่ม BACK */
-.back{
+.back {
     display: flex;
-    overflow: visible;
     align-items: center;
     justify-content: center;
-    float: left;
-
-    font-style: italic;
-    font-size: 20px;
-    font-weight: 600;
     
-
-    border: 3px solid black;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
-    margin: 5px;
-    margin-top: 80px;
-    margin-left: 50px;
-    margin-bottom: -60px;
-    padding: 3px;
+    outline: none;
 
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 
-    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    
+    background-image: linear-gradient(to top, 
+    #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+
+    /* color: #606060; */
+
     color: black;
-}
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 0 1px #fff;
 
+    border-radius: 30px;
+    border: 1px solid #8F9092;
+
+    transition: all 0.2s ease;
+}
+  
 .back:hover {
-    background-color: #eec404; /* สีเมื่อ hover */
-    box-shadow: 0.15em 0.15em;
-    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px     #CECFD1;
 }
-
+  
 .back:active {
-    transform: translate(0.05em, 0.05em); 
-    box-shadow: 0.05em 0.05em;
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+  
+.back:focus {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 }
 
 
