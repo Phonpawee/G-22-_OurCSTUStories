@@ -5,10 +5,10 @@ body {
     background-color: #FFF5E4;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 630px) {
+    
     body {
-        background-color:
-            #E8D8C4;
+        background-color: #E8D8C4;
         margin: 0;
 
         .container {
@@ -18,40 +18,47 @@ body {
             padding: 10px;
             margin: 20px;
         }
+
         .Profile {
             flex-shrink: 0;
-            width: 330px;
-            height: auto;
+
+            width: 250px;
+
             border: 2px solid #FFB9B9;
             border-radius: 8px;
-            margin: 22px;
-            margin-top: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: -5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    
+            margin: 20px;
+            
         }
 
         .content {
             border: 2px solid #FFB9B9;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;  
             padding: 20px;
+
             background-color: #fae6df;
-            margin: 10px;
-            width: 280px;
+            
+            width: auto;
         }
     
         .content p {
-            font-size: 18px;
+            font-size: 16px;
             margin: 8px;
             color: #584B42;
             line-height: 1;
         }
+
     }
 
     header {
         margin: 30px;
         margin-bottom: 20px;
+
+        align-items: center;
         justify-content: center;
+
     }
 
 }
@@ -70,37 +77,47 @@ header h1 {
 
 .container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
-    max-width: 1000px;
+
+    max-width: auto;
     max-height: auto;
-    margin: 0 auto;
-    border: 2px solid #FFB9B9;
+    
     background-color: #FFD1D1;
-    padding: 40px;
+
+    border: 2px solid #FFB9B9;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    padding: 30px;
+    
+
 }
 
 .Profile {
     flex-shrink: 0;
+
     width: 350px;
-    height: auto;
+
     border: 2px solid #FFB9B9;
     border-radius: 8px;
-    margin: 22px;
-    margin-top: 95px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    margin: 20px;
+    
 }
 
 .content {
     border: 2px solid #FFB9B9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
+    margin: 15px;
+
     background-color: #fae6df;
-    margin: 20px;
-    width: 500px;
+    
+    width: auto; 
+
 }
 
 .content p {
@@ -124,7 +141,7 @@ header h1 {
 }
 
 footer {
-    margin: 40px;
+    margin: 35px;
 }
 
 
