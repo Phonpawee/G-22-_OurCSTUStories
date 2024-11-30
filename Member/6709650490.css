@@ -146,6 +146,67 @@ footer {
 
 
 
+/* ปุ่ม Homepage */
+.home {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+}
+  
+.homeicon {
+    width: 20px;
+    transition-duration: .3s;
+}
+  
+.homeicon path {
+    fill: white;
+}
+  
+.home:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(19, 188, 84);
+    align-items: center;
+}
+  
+.home:hover .homeicon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+}
+  
+.home::before {
+    position: absolute;
+    top: -20px;
+    content: "Homepage";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+}
+  
+.home:hover::before {
+    font-size: 14px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+}
+
+
+
 /* ปุ่ม BACK */
 .back {
     display: flex;

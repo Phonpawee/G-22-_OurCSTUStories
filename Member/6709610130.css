@@ -1,3 +1,11 @@
+header{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
 footer{
     width: 100%;
     height: 100px;
@@ -15,37 +23,112 @@ footer{
 
 .container {
     display: flex;
-    align-items: left;
+    align-items: center;
+    justify-content: center;
+
     background-color: #ffffff;
+
     border-radius: 15px; /* ขอบมน */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงา */
-    padding: 100px;
-    display: flex;
-    flex-wrap: wrap; /* ให้ย่อหน้าจอแล้วองค์ประกอบซ้อนกัน */
-    max-width: 800px;
-    width: 100%;
+    margin: 5px;
+    padding: 20px;
+
+    flex-wrap: wrap; /* ทำให้ย่อหน้าจอแล้วองค์ประกอบซ้อนกัน */
+
+    width: auto;
 }
 
-img {
-    margin-right: 10px; /* ระยะห่างระหว่างรูปภาพและข้อความ */
+.text{
+    font-size: 18px;
+    
+    border: 0px;
+    margin: 10px;
+
+    width: auto;
+
 }
 
 body {
-    margin: 0;
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to bottom, #ffcce6, #ffe6f7); /* ไล่สีพื้นหลัง */
     color: #333;
+
     display: flex;
     flex-direction: column;
     align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
-    padding: 20px 0;
-}
-.container img {
-    border-radius: 10px; /* ขอบรูปมน */
-    max-width: 200px;
-    margin-right: 20px; /* เว้นช่องว่างระหว่างรูปกับข้อความ */
+    padding: 15px;
 }
 
+.container img {
+    border-radius: 10px; /* ขอบรูปมน */
+    margin: 15px;
+    
+}
+
+
+
+/* ปุ่ม Homepage */
+.home {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: none;
+    margin: 15px;
+
+    background-color: rgb(20, 20, 20);
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+
+}
+  
+.homeicon {
+    width: 20px;
+    transition-duration: .3s;
+}
+  
+.homeicon path {
+    fill: white;
+}
+  
+.home:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(19, 188, 84);
+    align-items: center;
+}
+  
+.home:hover .homeicon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+}
+  
+.home::before {
+    position: absolute;
+    top: -20px;
+    content: "Homepage";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+}
+  
+.home:hover::before {
+    font-size: 14px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+}
 
 
 /* ปุ่ม BACK */
@@ -93,62 +176,10 @@ body {
 
 
 
-@media screen and (max-width: 1024px) {
-    .content h2 {
-        font-size: 14px;
-    }
+@media screen and (max-width: 630px) {
+    
 
-    .back{
-        color:  #000000;
-        text-decoration: none;
-        margin-left: -70%;
-        font-size: 15px;
-        overflow:visible;
-        margin-top: 40px;
-    }
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 50%;
-    }
-}
 
-@media screen and (max-width: 480px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 50%;
-    }
-
-    img {
-        width: 100%;
-        margin-bottom: -80px;
-    }
-
-    .content h2 {
-        font-size: 14px;
-    }
-
-    .contact-info {
-        font-size: 12px;
-    }
-
-    .back{
-        color:  #000000;
-        text-decoration: none;
-        float: left;
-        margin-left: -70%;
-        font-size: 15px;
-        overflow:visible;
-        margin-top: 40px;
-    }
-
-    .text {
-        margin-top: 100px;
-        
-    }
 }
 
 

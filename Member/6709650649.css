@@ -1,6 +1,5 @@
 
 
-
 *{
     box-sizing: border-box;
 
@@ -8,10 +7,13 @@
 
 header {
     background-color:rgb(242, 240, 240);
+    display: block;
     text-align: center;
+    justify-content: center;
     width: 100%;
     height: 100px;
-    margin-bottom: 38px;
+    margin: 10px;
+    margin-bottom: 45px;
     padding: 10px;
 }
 
@@ -103,43 +105,68 @@ footer {
 
 
 
-/* ปุ่ม BACK */
-/* .back{
+/* ปุ่ม Homepage */
+.home {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    float: left;
 
-    font-weight: 600;
-    font-size: 20px;
-
-    border: 3px solid black;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
-    margin: 5px;
-    padding: 3px;
-
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-
-    text-decoration: none;
-    color: black;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+}
+  
+.homeicon {
+    width: 20px;
+    transition-duration: .3s;
+}
+  
+.homeicon path {
+    fill: white;
+}
+  
+.home:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(19, 188, 84);
+    align-items: center;
+}
+  
+.home:hover .homeicon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+}
+  
+.home::before {
+    position: absolute;
+    top: -20px;
+    content: "Homepage";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+}
+  
+.home:hover::before {
+    font-size: 14px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
 }
 
-.back:hover {
-    background-color: #eec404; สีเมื่อ hover
-    box-shadow: 0.15em 0.15em;
-    transform: translate(-0.05em, -0.05em);
-}
-
-.back:active {
-    transform: translate(0.05em, 0.05em); 
-    box-shadow: 0.05em 0.05em;
-} */
 
 
-
-/* ปุ่ม back 2  */
+/* ปุ่ม back */
 .back {
     display: flex;
     align-items: center;
