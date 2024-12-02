@@ -5,6 +5,12 @@
 
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     /* background-color:rgb(242, 240, 240); */
     background: linear-gradient(to bottom,rgb(237, 235, 235), #FFFFFF, #F8F8FF);
@@ -21,12 +27,9 @@ header {
 
 body {
     /* background: linear-gradient(to bottom,rgb(237, 235, 235), #FFFFFF, #F8F8FF); */
-    
     font-family: "Noto Sans Thai", sans-serif;
-    font-size: 16px;
-    min-height: 100vh;
+    font-size: 18px;
     margin: 0px;
-    
 
 }
 
@@ -62,7 +65,7 @@ h1 {
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 420px;
+    width: 450px;
 
     background-color: #f4f3f3;
 
@@ -71,35 +74,36 @@ h1 {
     box-shadow: 0px 4px 6px black;
     padding: 10px;
     
-
-
 }
   
 
 
 
 
+
 /* ส่วนของคำสั่ง class  */
 .container {
+    width: auto;
+
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+    justify-content: center;
 
     border-radius: 25px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
-    margin: 10px;
+    margin: 25px;
     padding: 20px;
     
 }
 
 
 .pic {
-    justify-content: center; /* จัดให้อยู่ตรงกลางแนวดิ่ง (optional) */
-    width: auto;
     height: auto;
-    
-    border-radius: 8px;
-    margin-bottom: 40px;
+    width: 300px; 
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    margin: 10px;
     
 }
 
@@ -110,6 +114,7 @@ h1 {
     border: 5px;
     border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-left: 40px;
     padding: 25px;
 
 }
@@ -390,11 +395,39 @@ h1 {
 
 
 /* Respond หน้า Device. */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 725px) {
+    header {
+        margin-bottom: 30px;
+    }
+
+
     h1 {
         height: auto;
-        width: 320px;
+        width: 325px;
         padding: 10px;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        border-radius: 25px;
+        margin: 10px;
+        padding: 15px;
+        
+    }
+    
+    
+    .pic {
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    .borinfo {
+        margin-top: 35px;
+    }
+
     
 }
