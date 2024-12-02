@@ -157,7 +157,7 @@ footer{
 
 
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 435px){
     
     .container {
         font-family: "Noto Sans Thai", sans-serif;
@@ -177,4 +177,11 @@ footer{
         justify-content: center;
     }
     
+    .container img {
+        width: 280px;
+    }
+
+    .content img {
+        width: 30px;
+    }
 }

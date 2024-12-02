@@ -50,7 +50,7 @@ footer {
     /* background-color: rgb(255, 252, 252); */
     background: linear-gradient(to top,rgb(237, 235, 235), #FFFFFF, #F8F8FF);
     height: 100px;
-    width: 100hv;
+    width: 100%;
     margin-top: 38px;
     padding: 15px;
 
@@ -69,7 +69,7 @@ h1 {
     background-color: #f4f3f3;
 
     border: 2px;
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: 0px 4px 6px black;
     padding: 10px;
     
@@ -83,22 +83,21 @@ h1 {
     width: auto;
 
     display: flex;
-    /* flex-direction: column; */
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    border-radius: 25px;
-    margin: 25px;
+    margin: 10px;
     padding: 20px;
     
 }
 
 
 .pic {
-    height: auto;
-    width: 300px; 
 
-    border-radius: 10px;
+    height: auto;
+    width: 280px; 
+
+    border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     margin: 0;
     
@@ -106,8 +105,11 @@ h1 {
 
 
 .info {
+    position: relative;
+
     background: linear-gradient(to top,rgb(237, 235, 235), #FFFFFF, #F8F8FF);
     font-size: 18px;
+
     border: 5px;
     border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -116,14 +118,6 @@ h1 {
 
     width: auto;
 }  
-
-.pocontact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    float: left;
-
-}
 
 
 
@@ -202,12 +196,15 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
-    background-color: transparent;
-    position: relative;
-    /* overflow: hidden; */
     
-    border-radius: 8px;
+    position: relative;
+    top: -33px;
+    right: -120px;
+    background-color: transparent;
+    /* overflow: hidden; */
+    border: none;
+    border-radius: 10px;
+    
     
     cursor: pointer;
     transition: all .3s;
@@ -276,12 +273,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
+    
     background-color: transparent;
     position: relative;
+    top: -78px;
+    right: -188px;
     /* overflow: hidden; */
-    
-    border-radius: 8px;
+    border: none;
+    border-radius: 10px;
     
     cursor: pointer;
     transition: all .3s;
@@ -387,7 +386,7 @@ h1 {
 
 
 /* Respond หน้า Device. */
-@media only screen and (max-width: 725px) {
+@media only screen and (max-width: 640px) {
     header {
         margin-bottom: 30px;
     }
@@ -401,18 +400,17 @@ h1 {
 
     .container {
         flex-direction: column;
-        
-        border-radius: 25px;
-        
-    }
-    
-    .pic {
-        border-radius: 10px;
-        margin: 0;
+
     }
 
+    .pic {
+        margin-bottom: 35px;
+    }
+
+    
+
     .info {
-        margin-top: 35px;
+        right: 18.5px;
     }
 
     
