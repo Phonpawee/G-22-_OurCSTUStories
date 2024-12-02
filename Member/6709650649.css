@@ -6,18 +6,22 @@
 }
 
 header {
-    background-color:rgb(242, 240, 240);
+    /* background-color:rgb(242, 240, 240); */
+    background: linear-gradient(to bottom,rgb(237, 235, 235), #FFFFFF, #F8F8FF);
     display: block;
     text-align: center;
     justify-content: center;
+
     width: 100%;
-    height: 100px;
-    margin-bottom: 75px;
+    height: auto;
+
+    margin-bottom: 55px;
     padding: 15px;
 }
 
 body {
-    background: linear-gradient(to bottom,rgb(237, 235, 235), #FFFFFF, #F8F8FF);
+    /* background: linear-gradient(to bottom,rgb(237, 235, 235), #FFFFFF, #F8F8FF); */
+    
     font-family: "Noto Sans Thai", sans-serif;
     font-size: 16px;
     min-height: 100vh;
@@ -41,7 +45,8 @@ section {
 } */
 
 footer {
-    background-color: rgb(242, 240, 240);
+    /* background-color: rgb(255, 252, 252); */
+    background: linear-gradient(to top,rgb(237, 235, 235), #FFFFFF, #F8F8FF);
     height: 100px;
     width: 100hv;
     margin-top: 38px;
@@ -52,8 +57,25 @@ footer {
 
 
 /* คำสั่งต่างๆ */
+h1 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 420px;
 
+    background-color: #f4f3f3;
+
+    border: 2px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px black;
+    padding: 10px;
+    
+
+
+}
   
+
 
 
 
@@ -63,26 +85,30 @@ footer {
     flex-direction: column;
     align-items: center;
 
-    border: 1px solid #151515;
-    border-radius: 10px;
+    border-radius: 25px;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
+    
 }
 
 
 .pic {
     justify-content: center; /* จัดให้อยู่ตรงกลางแนวดิ่ง (optional) */
     width: auto;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    height: auto;
+    
+    border-radius: 8px;
+    margin-bottom: 40px;
     
 }
 
 
 .borinfo {
+    background: linear-gradient(to top,rgb(237, 235, 235), #FFFFFF, #F8F8FF);
+
     border: 5px;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     padding: 25px;
 
@@ -91,7 +117,6 @@ footer {
 .personalinformation {
     font-size: 18px;
     width: auto;
-    margin-top: 30px;
     
 }
 
@@ -109,20 +134,26 @@ footer {
 .home {
     width: 50px;
     height: 50px;
+
     border-radius: 50%;
+    border: none; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    margin-top: 10px;
+    margin-left: 20px;
+
+
     background-color: rgb(20, 20, 20);
-    border: none;
     font-weight: 600;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
-    cursor: pointer;
-    transition-duration: .3s;
     overflow: hidden;
     position: relative;
+
+    cursor: pointer;
+    transition-duration: .3s;
+    
 }
   
 .homeicon {
@@ -166,6 +197,156 @@ footer {
 
 
 
+/* IG ICON */
+.Btn {
+    width: 45px;
+    height: 45px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    
+    border-radius: 8px;
+    
+    cursor: pointer;
+    transition: all .3s;
+}
+  
+.igContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+  
+.BGig {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    
+    z-index: -1;
+    border-radius: 9px;
+
+    pointer-events: none;
+    animation: gradient-ig 6s ease infinite;
+    transition: all .3s;
+}
+
+@keyframes gradient-ig {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+}
+  
+.Btn:hover .BGig {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+  
+.Btn:hover .igContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+}
+  
+  
+
+/* FB ICON */
+.F_Btn {
+    width: 46px;
+    height: 46px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    
+    border-radius: 8px;
+    
+    cursor: pointer;
+    transition: all .3s;
+}
+  
+.F_Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+  
+.BG_f {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(120deg, #3b5998, #4c70ba, #5a82d8);
+    /* background-color: #1877F2; สีพื้นหลัง Facebook */
+    
+    z-index: -1;
+    border-radius: 9px;
+
+    pointer-events: none;
+    animation: gradient-fb 6s ease infinite;
+    transition: all .3s;
+}
+
+@keyframes gradient-fb {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+  
+.F_Btn:hover .BG_f {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+  
+.F_Btn:hover .F_Container {
+    background-color: rgba(156, 156, 156, 0.466);
+}
+
+
+
 /* ปุ่ม back */
 .back {
     display: flex;
@@ -181,9 +362,7 @@ footer {
     
     background-image: linear-gradient(to top, 
     #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
-
     /* color: #606060; */
-
     color: black;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
@@ -211,7 +390,11 @@ footer {
 
 
 /* Respond หน้า Device. */
-@media only screen and (max-width: 420px) {
-
+@media only screen and (max-width: 500px) {
+    h1 {
+        height: auto;
+        width: 320px;
+        padding: 10px;
+    }
     
 }
