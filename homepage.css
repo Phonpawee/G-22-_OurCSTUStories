@@ -8,14 +8,19 @@ body{
 }
 
 header {
-  background-color: #6D2932;
+  background-color:#6D2932;
   padding: 3px;
-    
 }
 
 .H {
   color: #E8D8C4;
   font-family: "Chewy", system-ui;
+  font-size: 60px;   
+}
+
+header .H{
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-size: 60px;
 }
 
@@ -25,9 +30,6 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
-
-  padding: 1px;
-
   background-color: #561C24;
 }
 
@@ -45,14 +47,43 @@ header {
 
 }
 
-.item {
-  text-align: center;
-  flex: 5%;
-
-  font-size: 20px;
-
-  margin: 10px;
+.nav-container .item1{
+  font-size: 10px;
   padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nav-container .item2{
+  font-size: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nav-container .item3{
+  font-size: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.nav-container .item1 a{
+  font-size: 25px;
+   padding: 10px;
+   text-align: center;
+}
+.nav-container .item2 a{
+  font-size: 25px;
+   padding: 10px;
+   text-align: center;
+}
+.nav-container .item3 a{
+   font-size: 25px;
+   padding: 10px;
+   text-align: center;
   
 }
 
@@ -232,6 +263,13 @@ footer a .comment:hover{
         
   }
 
+  header .H{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+
+  
   .nav-container {
     display: flex;
     flex-direction: row;

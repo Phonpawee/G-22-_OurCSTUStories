@@ -8,9 +8,20 @@
 }
 
 header {
-  background-color: #6D2932;
-  padding: 5px;
-    
+  background-color:#6D2932;
+  padding: 3px;
+}
+
+.H {
+  color: #E8D8C4;
+  font-family: "Chewy", system-ui;
+  font-size: 60px;   
+}
+
+header .H{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 60px;
 }
 
 body{
@@ -25,11 +36,6 @@ footer {
   padding: 20px;
 }
 
-.H {
-  color: #E8D8C4;
-  font-family: "Chewy", system-ui;
-  font-size: 60px;
-}
 
 .nav-container {
   display: flex;
@@ -37,9 +43,8 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
-
+  transition: all 0.3s ease; /* เพิ่ม transition สำหรับการขยาย */
   padding: 1px;
-
   background-color:#561C24;
   
 }
@@ -58,14 +63,43 @@ footer {
 
 }
 
-.item {
-  text-align: center;
-  flex: 5%;
-
-  font-size: 20px;
-
-  margin: 10px;
+.nav-container .item1{
+  font-size: 10px;
   padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nav-container .item2{
+  font-size: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nav-container .item3{
+  font-size: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.nav-container .item1 a{
+  font-size: 25px;
+   padding: 10px;
+   text-align: center;
+}
+.nav-container .item2 a{
+  font-size: 25px;
+   padding: 10px;
+   text-align: center;
+}
+.nav-container .item3 a{
+   font-size: 25px;
+   padding: 10px;
+   text-align: center;
   
 }
 
@@ -148,13 +182,22 @@ a{
   font-size: 1.5rem; /* ขยายขนาดตัวอักษร */
 }
 
+p{
+  font-family: "Itim", cursive;
+}
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 480px) {
 
   body{
     margin: 0;
         
+  }
+
+  header .H{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
   }
 
   .nav-container {
@@ -184,11 +227,26 @@ a{
     font-size: 35px;
   }
 
-  .item {
-    padding: 8px;
-    margin: 8px;
+  body .nav-container .item1 {
+    font-size: 10px;
+    padding-top: 15px;
+    margin: 0px;
     text-align: center;
-  }
+}
+
+body .nav-container .item2 {
+    font-size: 10px;
+    padding-top: 15px;
+    margin: 0px;
+    text-align: center;
+}
+
+body .nav-container .item3 {
+    font-size: 10px;
+    padding-top: 15px;
+    margin: 0px;
+    text-align: center;
+}
 
   .gallery {
     grid-template-columns: 1fr; /* จัดองค์ประกอบเป็น 1 คอลัมน์ */
@@ -198,11 +256,38 @@ a{
 
   .image-container {
     width: 80%; /* กล่องเต็มความกว้าง */
-    height: auto; /* ความสูงอัตโนมัติ */
-
+    height: auto; 
     margin: 10px;
   }
 
+  .image-container.active .overlay{
+    font-size: 20px;
+    padding-right: 25px;
+  }
 
+  .image-container.active {
+    width: 350px; /* กรอบขยายกว้าง 1.5 เท่า */
+    height: 400px; /* กรอบขยายสูง 1.5 เท่า */
+    border: 3px solid #333; /* เปลี่ยนขอบเมื่อขยาย */
+  }
+  .image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+  
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
 }
-

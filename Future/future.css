@@ -78,8 +78,8 @@ body {
         color: #E8D8C4;
         font-family: "Chewy", system-ui;
         font-size: 40px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     img {
@@ -99,19 +99,27 @@ body {
         font-size: 18px;
         color: white;
     }
+
+    
 }
 
 
 header {
     background-color:#6D2932;
-    padding: 5px;
+    padding: 3px;
 }
 
 .H {
     color: #E8D8C4;
     font-family: "Chewy", system-ui;
-    font-size: 60px;
+    font-size: 60px;   
 }
+
+header .H{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 60px;
+  }
 
 .nav-container {
     display: flex;
@@ -136,14 +144,45 @@ header {
     color: gray;
 }
 
-
-.item {
-    font-size: 20px;
+.nav-container .item1{
+    font-size: 10px;
     padding: 10px;
-    flex: 5%;
-    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-}
+  }
+  .nav-container .item2{
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .nav-container .item3{
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+  }
+  
+  .nav-container .item1 a{
+    font-size: 25px;
+     padding: 10px;
+     text-align: center;
+  }
+  .nav-container .item2 a{
+    font-size: 25px;
+     padding: 10px;
+     text-align: center;
+  }
+  .nav-container .item3 a{
+     font-size: 25px;
+     padding: 10px;
+     text-align: center;
+    
+  }
 
 a {
     color: black;
