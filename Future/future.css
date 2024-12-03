@@ -103,9 +103,8 @@ body {
 
 
 header {
-    background-color:
-        #6D2932;
-    padding: 3px;
+    background-color:#6D2932;
+    padding: 5px;
 }
 
 .H {
@@ -138,30 +137,12 @@ header {
 }
 
 
-
-.item1 {
+.item {
     font-size: 20px;
     padding: 10px;
     flex: 5%;
     margin: 10px;
     text-align: center;
-}
-
-.item2 {
-    font-size: 20px;
-    padding: 10px;
-    flex: 5%;
-    margin: 10px;
-    text-align: center;
-}
-
-.item3 {
-    font-size: 20px;
-    padding: 10px;
-    flex: 5%;
-    margin: 10px;
-    text-align: center;
-
 }
 
 a {
@@ -213,4 +194,6 @@ p {
 footer {
     background-color: #6D2932;
     padding: 20px;
+    height: 100px;
 }
+

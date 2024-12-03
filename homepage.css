@@ -18,15 +18,19 @@ header {
   font-family: "Chewy", system-ui;
   font-size: 60px;
 }
+
 .nav-container {
   display: flex;
   flex-direction: row;
-  padding: 1px;
-  background-color:#561C24;
+  flex-wrap: wrap;
   justify-content: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+
+  padding: 1px;
+
+  background-color: #561C24;
 }
+
 .nav-container nav a{
   color: aliceblue;
   font-family: "Itim", cursive;
@@ -41,29 +45,15 @@ header {
 
 }
 
+.item {
+  text-align: center;
+  flex: 5%;
 
+  font-size: 20px;
 
-.item1{
-  font-size: 20px;
-  padding: 10px;
-  flex: 5%;
   margin: 10px;
-  text-align: center;
-}
-.item2{
-  font-size: 20px;
   padding: 10px;
-  flex: 5%;
-  margin: 10px;
-  text-align: center;
-}
-.item3{
-  font-size: 20px;
-  padding: 10px;
-  flex: 5%;
-  margin: 10px;
-  text-align: center;
-   
+  
 }
 
 a{
@@ -163,11 +153,12 @@ img{
 footer{
   background-color: #6D2932;
   padding: 20px;
+  height: 100px;
 
 }
 
 footer .top_comment{
-  font-size: 30px;
+  font-size: 22px;
   color: aliceblue;
   font-family: "Itim", cursive;
 
@@ -181,8 +172,8 @@ footer .top_comment{
   align-items: center;
   justify-content: flex-start;
 
-  width: 100px;
-  height: 40px;
+  width: 90px;
+  height: 35px;
 
   border: none;
   padding: 0px 20px;
@@ -201,7 +192,7 @@ footer .top_comment{
   width: 13px;
   position: absolute;
   right: 0;
-  margin-right: 25px;
+  margin-right: 20px;
   fill: white;
   transition-duration: 0.3s;
 }
